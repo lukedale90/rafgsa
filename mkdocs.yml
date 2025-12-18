@@ -60,7 +60,7 @@ nav:
 
 plugins:
   - search
-  - mkdocs_with_pdf
+  # - mkdocs_with_pdf
   - autorefs
   - git-revision-date-localized:
       type: timeago
