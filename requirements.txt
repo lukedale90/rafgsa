@@ -1,0 +1,7 @@
+
+mkdocs
+mkdocs-material
+mkdocs-with-pdf
+mkdocs-autorefs
+mkdocs-git-revision-date-localized-plugin
+pymdown-extensions

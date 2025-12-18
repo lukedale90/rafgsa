@@ -1,0 +1,84 @@
+
+site_name: RAFGSA Regulatory Library
+site_description: Public regulatory library for the RAF Gliding & Soaring Association
+site_url: https://your-org.github.io/reg-library/
+repo_url: https://github.com/your-org/reg-library
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: blue
+    accent: light-blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - search.share
+  logo: images/rafgsa-logo.png
+  favicon: images/favicon.png
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Handbook:
+      - Overview: handbook/index.md
+      - Introduction: handbook/01-introduction.md
+      - Governance: handbook/02-governance.md
+      - Membership: handbook/03-membership.md
+      - Equipment: handbook/04-equipment.md
+      - Finance: handbook/05-finance.md
+      - Insurance: handbook/06-insurance.md
+      - Medical: handbook/07-medical.md
+      - Competitions: handbook/08-competitions.md
+      - Annexes:
+          - Property Accounting: handbook/annexes/annex-a-property.md
+          - Private Glider Deposit: handbook/annexes/annex-b-private-glider-deposit.md
+  - Operations Manual:
+      - Overview: ops-manual/index.md
+      - Flying Supervision: ops-manual/01-flying-supervision.md
+      - Operating Regulations: ops-manual/02-operating-regulations.md
+      - Safety: ops-manual/03-safety.md
+      - Launching: ops-manual/04-launching.md
+      - Training: ops-manual/05-training.md
+      - Aerobatics: ops-manual/06-aerobatics.md
+      - Cross-Country: ops-manual/07-cross-country.md
+      - Annexes:
+          - Service Regulations: ops-manual/annexes/annex-a.md
+          - Minimum Qualifications: ops-manual/annexes/annex-b-min-qualifications.md
+          - Accident Reporting: ops-manual/annexes/annex-c-accident-reporting.md
+          - Strong Winds (SF25): ops-manual/annexes/annex-d-strong-winds.md
+  - Forms: forms/
+  - Glossary: glossary.md
+  - Changelog: changelog.md
+
+plugins:
+  - search
+  - mkdocs_with_pdf
+  - autorefs
+  - git-revision-date-localized:
+      type: timeago
+
+markdown_extensions:
+  - toc:
+      permalink: True
+  - admonition
+  - footnotes
+  - def_list
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-org
