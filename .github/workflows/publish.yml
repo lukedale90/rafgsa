@@ -1,4 +1,3 @@
-
 name: Build and Publish Regulatory Library
 
 on:
@@ -7,7 +6,7 @@ on:
 
 permissions:
   contents: write
-  pages: write
+  pages: write  # Required for GitHub Pages Deployment API
 
 jobs:
   build:
@@ -27,8 +26,6 @@ jobs:
         run: |
           mkdocs build --clean
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/deploy-pages@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-          force_orphan: true
+          token: ${{ secrets.GITHUB_TOKEN }}
