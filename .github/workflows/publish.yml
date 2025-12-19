@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
   pages: write  # Required for GitHub Pages Deployment API
+  id-token: write  # Required for authentication with GitHub Pages Deployment API
 
 jobs:
   build:
